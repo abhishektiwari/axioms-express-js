@@ -1,5 +1,5 @@
 # web-js ![npm](https://img.shields.io/npm/v/@axioms/express-js?style=flat-square)
-Axioms Javascript client for Express.
+[Axioms](https://axioms.io) Javascript SDK for Express. Secure your Express APIs using Axioms authentication and authorization.
 
 
 # Install

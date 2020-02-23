@@ -1,6 +1,6 @@
 {
     "name": "@axioms/express-js",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Axioms Javascript client for Express",
     "main": "./lib/index.js",
     "scripts": {
@@ -28,5 +28,20 @@
         "nodemon": "^2.0.2",
         "supertest": "^4.0.2"
     },
-    "homepage": "https://github.com/axioms-io/express-js"
+    "keywords": [
+        "iam",
+        "jwt",
+        "oauth2",
+        "openid",
+        "sso",
+        "authn",
+        "authz",
+        "authentication",
+        "authorization",
+        "access",
+        "token",
+        "id",
+        "token"
+    ],
+    "homepage": "https://github.com/axioms-io/express-js/blob/master/README.md"
 }
