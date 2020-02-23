@@ -1,0 +1,5 @@
+# Ignore src
+src/
+tests/
+TODO.md
+BUILD.md
