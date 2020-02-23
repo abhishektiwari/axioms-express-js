@@ -1,6 +1,6 @@
 {
     "name": "@axioms/express-js",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "Axioms Javascript client for Express",
     "main": "./lib/index.js",
     "scripts": {
