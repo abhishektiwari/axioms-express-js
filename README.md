@@ -17,7 +17,10 @@ Add Axioms domain and resource audience.
 ```
 AXIOMS_DOMAIN=<your-axioms-slug>.axioms.io
 AXIOMS_AUDIENCE=<your-axioms-resource-identifier>
+AXIOMS_CACHE_KEY_TIME=300000
 ```
+
+`AXIOMS_CACHE_KEY_TIME` is optional value in millisecond. Default to `300000` millisecond i.e. 5 minutes. Set to `0` if you don't want catch keys.
 
 ## Import `validToken` and configure
 Create `checkToken.js` and add following,
@@ -27,7 +30,8 @@ const { validToken } = require("@axioms/express-js");
 
 const checkToken = validToken({
     axiomsDomain: process.env.AXIOMS_DOMAIN,
-    axiomsAud: process.env.AXIOMS_AUDIENCE
+    axiomsAud: process.env.AXIOMS_AUDIENCE,
+    cacheKeyTime: process.env.AXIOMS_CACHE_KEY_TIME
 });
 module.exports = checkToken;
 ```
@@ -57,4 +61,4 @@ router.get('/', checkToken, validScope(['profile', 'openid']), (req, res) => {
 module.exports = router;
 ```
 
-For more details please check our [sample-node-express](https://github.com/axioms-io/sample-node-express).
+For more details please check our [sample-node-express](https://github.com/axioms-io/sample-node-express) and [sample-node-sails](https://github.com/axioms-io/sample-node-sails) samples.

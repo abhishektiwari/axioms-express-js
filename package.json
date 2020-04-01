@@ -14,10 +14,10 @@
     "author": "Axioms",
     "license": "MIT",
     "dependencies": {
+        "axios": "^0.19.2",
+        "jwk-to-pem": "^2.0.2",
         "jws": "^3.2.2",
-        "memory-cache": "^0.2.0",
-        "request": "^2.88.0",
-        "jwk-to-pem": "^2.0.2"
+        "memory-cache": "^0.2.0"
     },
     "devDependencies": {
         "babel-cli": "^6.26.0",
