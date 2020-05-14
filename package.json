@@ -1,7 +1,7 @@
 {
     "name": "@axioms/express-js",
-    "version": "0.0.5",
-    "description": "Axioms Javascript client for Express",
+    "version": "0.0.6",
+    "error_description": "Axioms Javascript client for Express",
     "main": "./lib/index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",

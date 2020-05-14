@@ -2,7 +2,7 @@ module.exports = function(requiredScopes, options) {
 
     if (!Array.isArray(requiredScopes)) {
         throw new Error(
-            'Parameter expectedScopes must be an array of strings representing the scopes assigned to resources.'
+            'Parameter requiredScopes must be an array of strings representing allowed scope or scopes.'
         );
     }
 
@@ -18,10 +18,16 @@ module.exports = function(requiredScopes, options) {
             if (hasScope) {
                 next()
             } else {
-                res.status(401).send({ "error": "Unauthorized access", "description": "You don't have required permission." })
+                res.status(403).send({
+                    "error": "insufficient_permission",
+                    "error_description": "Insufficient role, scope or permission"
+                })
             }
         } else {
-            res.status(401).send({ "error": "Unauthorized access", "description": "You don't have required permission." })
+            res.status(403).send({
+                "error": "insufficient_permission",
+                "error_description": "Insufficient role, scope or permission"
+            })
         }
     }
 }
