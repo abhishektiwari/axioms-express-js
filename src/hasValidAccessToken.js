@@ -36,7 +36,6 @@ module.exports = function(config) {
                     var alg;
                     var kid = unverified.header.kid;
                     var now = Math.floor(Date.now() / 1000);
-                    console.log('0')
                     if (bearer.toLowerCase() == "bearer" && (payload.hasOwnProperty('token_type')) && (payload.token_type.toLowerCase() == "bearer")) {
                         let keys;
                         try {
